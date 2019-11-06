@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            width: 90vw;
+            font-size: 10px;
+            padding: 2rem;
+            background-color: black;
+            /*text-align: center;*/
+        }
+        img{
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+        #cont-email{
+            margin: auto;
+            width: 600px;
+            background-color: black;
+            font-size: 1em;
+            padding: 2em;
+        }
+        section#cabecera{
+            color: #4d5256;
+            display: flex;
+            margin-bottom: 6em;
+            font-size: 1.3em;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section#cabecera a{
+            text-decoration: underline;
+            color: #4d5256;
+        }
+        img.mrg-bottom{
+            margin-bottom: 2em;
+        }
+        section#spain{
+            display: flex;
+            color: #fbd43a;
+            align-items: center;
+            padding-bottom: 1em;
+        }
+        section#spain .col-izq{
+            width: 60%;
+        }
+        section#spain .col-drch{
+            width: 40%;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        section#spain .col-drch h2{
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 0;
+        }
+        section#spain .col-drch p{
+            margin: .3em;
+        }
+        section#spain .col-drch p:last-child{
+            font-weight: bold;
+        }
+
+        section#fly{
+            color: white;
+            background-color: #4d5256;
+            display: flex;
+            align-items: center;
+        }
+        section#fly p{
+            padding: 0 2em;
+            font-size: 1.5em;
+        }
+        section#fly img{
+            width: auto;
+            height: 3em;
+        }
+        section#imagenes{
+            margin-top: -3em;
+        }
+        section#call-action{
+            text-align: center;
+            padding: 5em 0;
+        }
+        section#call-action a{
+            color: #c08a13;
+            background-color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1em 1.5em;
+            -webkit-border-radius: .3em;
+            -moz-border-radius: .3em;
+            border-radius: .3em;
+        }
+
+        section#enjoy{
+            color: #a9b2b6;
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 1em;
+            display: flex;
+        }
+        section#enjoy p{
+            width: 100%;
+            margin: 0;
+            letter-spacing: .1em;
+            color: #fbd43a;
+        }
+        section#enjoy p > span{
+            color: white;
+        }
+        section#tabla{
+            color: white;
+            font-size: 1.3em;
+            padding-bottom: 9em;
+        }
+        section#tabla a{
+            color: #fbd43a;
+            text-decoration: underline;
+        }
+        section#tabla .fila-cabecera{
+            background-color: #4d5256;
+            padding-left: 1em;
+            display: flex;
+            align-items: center;
+        }
+        section#tabla .fila-cabecera > *{
+            margin-right: .8em;
+        }
+        section#tabla .fila.gris{
+            background-color: #4d5256;
+        }
+        section#tabla .fila{
+            padding: 0 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        section#tabla .fila > div{
+            display: flex;
+            align-items: center;
+        }
+        section#tabla .fila > div > *{
+            margin-right: 1em;
+        }
+        section#tabla div#tabla-body{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        div#tabla-body > *{
+            width: 100%;
+        }
+        section#tabla div#tabla-body > div{
+            width: 100%;
+        }
+        section#aviso{
+            color: white;
+
+            text-align: center;
+            margin-bottom: 3em;
+        }
+        section#aviso p{
+            font-size: 1.3em;
+            margin: .2em;
+        }
+        @media only screen and (max-width: 1000px) and (pointer: coarse){
+            #cont-email{
+                width: 100%;
+            }
+            section#cabecera{
+                font-size: 1.6em;
+                justify-content: space-around;
+            }
+            section#spain{
+                flex-direction: column;
+            }
+            section#spain .col-izq{
+                width: 100%;
+            }
+            section#spain .col-drch{
+                width: 100%;
+                font-size: 3.3em;
+            }
+            section#fly{
+                flex-direction: column;
+                padding-bottom: 2em;
+            }
+            section#fly p{
+                font-size: 1.75em;
+                width: 100%;
+                text-align: center;
+            }
+            section#fly img{
+                height: 5em;
+            }
+            section#call-action{
+                padding: 9em 0;
+            }
+            section#call-action a{
+                font-size: 3.5em;
+            }
+            section#tabla{
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cont-email">
+        <section id="cabecera">
+            <a>Versión online</a>
+            <p>Añade <a href="#">marketing@salvelinus.es</a> a tus contactos</p>
+        </section>
+        <img class="mrg-bottom" src="cabecera-salvelinus.jpg">
+        <img src="salvelinus-tours.jpg">
+        <section id="spain">
+            <div class="col-izq">
+                <img src="spain.jpg">
+            </div>
+            <div class="col-drch">
+                <h2>The Ultimate Pyrenees Tour</h2>
+                <p>8/10/14 nigths itineraries for</p>
+                <p>June, July, August and September</p>
+                <p>2020 & 2021</p>
+            </div>
+        </section>
+        <section id="fly">
+            <p>Fly Fishing Lodges, Gourmet Tours and Multi Activity programs by</p>
+            <img src="logo-salvelinus.png">
+        </section>
+        <section id="imagenes">
+            <img src="collage.png">
+        </section>
+        <section id="call-action">
+            <a href="#">REQUEST INFORMATION</a>
+        </section>
+        <section id="enjoy">
+            <p>ENJOY <span>OUR</span> EXPERIENCES</p>
+        </section>
+        <section id="tabla">
+            <div class="fila-cabecera gris">
+                <p>REAL PEOPLE, UNIQUE EXPERIENCE</p>
+                <a href="#">watch trailer 1</a>
+                <p>+</p>
+                <a href="#">watch trailer 2</a>
+                <p>+</p>
+                <a href="#">testimonial</a>
+            </div>
+            <div id="tabla-body">
+                <div>
+                    <div class="fila">
+                        <p>FLY FISHING LODGES</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+                    </div>
+                    <div class="fila gris">
+                        <p>FAMILY TRAVEL</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                    <div class="fila">
+                        <p>FOOD & WINE TOURS</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                    <div class="fila gris">
+                        <p>MULTI ACTIVITY</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="fila">
+                        <p>HELI TOURS</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                    <div class="fila gris">
+                        <p>WELLNESS</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                    <div class="fila">
+                        <p>MULTI DESTINATION</p>
+                        <div>
+                            <a href="#">watch</a>
+                            <p>+</p>
+                            <a href="#">testimonial</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aviso">
+            <p>SALVELINUS complies with the legislation in terms of personal data protection. According to Spanish Personal Data Protection Organic Law 15/1999, if you no longer want to receive these emails, email us.</p>
+            <p>Copyright &copy; 2019 SALVELINUS. All rights reserved</p>
+        </section>
+    </div>
+</body>
+</html>
